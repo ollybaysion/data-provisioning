@@ -1,0 +1,15 @@
+{
+  "queries": {
+    "q01_sensor_master": {
+      "columns": ["SENSOR_ID", "SENSOR_NM", "SITE_CD"],
+      "provenance": {
+        "db_id": null,
+        "integrity": "none",
+        "round": 1,
+        "rows": 1,
+        "validated": false
+      },
+      "rows": [["S-0004", "온도센서A", "STE01"]]
+    }
+  }
+}

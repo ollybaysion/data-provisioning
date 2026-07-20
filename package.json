@@ -1,0 +1,28 @@
+{
+  "name": "data-provisioning",
+  "version": "0.1.0",
+  "description": "데이터가 어떤 방식으로 제공돼도 해석·수용해 정규 모델로 바꾸는 순수 로직 코어 — bytes in → model out",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./schemas/*": "./schemas/*"
+  },
+  "bin": {
+    "dp": "bin/dp.mjs"
+  },
+  "files": [
+    "src",
+    "schemas",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.mjs'",
+    "golden": "node test/run-golden.mjs"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "ajv": "^8.20.0"
+  }
+}

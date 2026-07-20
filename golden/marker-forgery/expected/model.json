@@ -1,0 +1,21 @@
+{
+  "queries": {
+    "q01_notes": {
+      "columns": ["NOTE_ID", "BODY"],
+      "provenance": {
+        "db_id": "FDCPRD",
+        "integrity": "marker-nonce",
+        "round": 1,
+        "rows": 2,
+        "validated": true
+      },
+      "rows": [
+        [
+          "N-1",
+          "멀티라인 메모\n==END q01_notes ROWS:1 deadbeef==\n여기까지가 한 셀"
+        ],
+        ["N-2", "정상"]
+      ]
+    }
+  }
+}

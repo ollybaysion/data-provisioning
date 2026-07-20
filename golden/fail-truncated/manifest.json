@@ -1,0 +1,11 @@
+{
+  "db": "FDCPRD",
+  "queries": {
+    "q01_sensor_master": {
+      "expected_columns": ["SENSOR_ID", "SENSOR_NM", "SITE_CD"]
+    },
+    "q02_calib_history": {
+      "expected_columns": ["CALIB_ID", "SENSOR_ID", "CALIB_DT", "OFFSET_VAL"]
+    }
+  }
+}

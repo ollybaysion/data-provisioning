@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ollybaysion/data-provisioning/schemas/report.schema.json",
+  "title": "Report",
+  "description": "ingest가 항상 반환하는 결과 객체. code만 안정 enum 계약이고 message는 사람용·비계약이다(§5·§7). 포트는 code로 분기한다.",
+  "type": "object",
+  "required": ["code", "message"],
+  "additionalProperties": false,
+  "properties": {
+    "code": { "$ref": "#/$defs/code" },
+    "message": {
+      "description": "사람용. **계약이 아니다** — 골든 대조에서 제외한다(부록 A-7: message 문구 차이로 전 포트가 동시에 깨지는 걸 막는다).",
+      "type": "string"
+    },
+    "query_id": {
+      "description": "문제가 특정 쿼리에 한정될 때 그 id. 기계 필드(골든 대조 대상, §7).",
+      "type": "string"
+    },
+    "where": {
+      "description": "문제 위치 힌트(행 번호·마커 등). 기계 필드(골든 대조 대상, §7).",
+      "type": "string"
+    },
+    "warnings": {
+      "description": "code 하나로는 담기지 않는 잔여 비치명 발견들. code에는 severity 최상위가 오고 나머지가 여기 쌓인다. 치명 코드는 즉시 중단하므로 warnings는 비치명만 담는다.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/finding" }
+    }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "required": ["code", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "$ref": "#/$defs/code" },
+        "message": { "type": "string" },
+        "query_id": { "type": "string" },
+        "where": { "type": "string" }
+      }
+    },
+    "code": {
+      "description": "안정 enum. 포트가 여기에 분기하므로 값 변경·삭제는 파괴적 변경이다.",
+      "enum": [
+        "OK",
+        "ZERO_ROWS",
+        "INTEGRITY_ABSENT",
+        "TIME_MIXED",
+        "TRUNCATED_PASTE",
+        "ROWCOUNT_MISMATCH",
+        "COLUMN_MISMATCH",
+        "IDENTITY_MISMATCH",
+        "ENCODING_UNDECIDABLE",
+        "PARTIAL_MARKING",
+        "MERGE_CONFLICT"
+      ],
+      "$comment": "치명(model 없음): TRUNCATED_PASTE·ROWCOUNT_MISMATCH·COLUMN_MISMATCH·IDENTITY_MISMATCH·ENCODING_UNDECIDABLE·PARTIAL_MARKING·MERGE_CONFLICT. 비치명(model 있음): OK·ZERO_ROWS·INTEGRITY_ABSENT·TIME_MIXED. 위 enum 배열 순서가 곧 severity 오름차순이며 code에는 최상위가 온다."
+    }
+  }
+}

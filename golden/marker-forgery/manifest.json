@@ -1,0 +1,4 @@
+{
+  "db": "FDCPRD",
+  "queries": { "q01_notes": { "expected_columns": ["NOTE_ID", "BODY"] } }
+}

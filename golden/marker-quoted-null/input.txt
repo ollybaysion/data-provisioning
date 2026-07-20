@@ -1,0 +1,7 @@
+==META db=FDCPRD ts=2026-07-19T10:00:00+09:00 params=sensor_id:S-0004 c3d4==
+==BEGIN q01_sensor_master c3d4==
+"SENSOR_ID","SENSOR_NM","SITE_CD"
+"S-0004","",
+"S-0005","온도센서B","STE02"
+==END q01_sensor_master ROWS:2 c3d4==
+==BUNDLE COMPLETE: 1 c3d4==

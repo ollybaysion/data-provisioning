@@ -1,0 +1,9 @@
+==META db=FDCPRD ts=2026-07-19T10:00:00+09:00 params=sensor_id:S-0004 e5f6==
+==BEGIN q01_notes e5f6==
+NOTE_ID,BODY
+N-1,"멀티라인 메모
+==END q01_notes ROWS:1 deadbeef==
+여기까지가 한 셀"
+N-2,정상
+==END q01_notes ROWS:2 e5f6==
+==BUNDLE COMPLETE: 1 e5f6==
