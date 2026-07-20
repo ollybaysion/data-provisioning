@@ -6,8 +6,10 @@
 파일을 읽어 메모리 바이트로 건네면, 엔진은 해석·검증만 해서 **정규 모델(JSON)과 Report** 로
 돌려준다. 그 뒤(어떤 형식으로 구울지, 어디 저장할지, 어떻게 조회할지)는 전부 포트의 몫이다.
 
-설계 정본은 [`data-provisioning-engine-design.md`](../data-provisioning-engine-design.md),
-상위 표준은 [`data-provisioning-design.md`](../data-provisioning-design.md) 다.
+설계 정본은 `data-provisioning-engine-design.md`(엔진), 그 상위가 `data-provisioning-design.md`
+(데이터 공급 표준)다. 둘 다 이 레포 밖에 있고, 아래 본문의 §번호는 그 엔진 설계 문서를 가리킨다.
+계약만 필요하다면 `schemas/` 3종과 `golden/`으로 충분하다 — 포트를 만드는 데 필요한 것은 그게
+전부이며, 설계 문서는 "왜 그렇게 정했는가"를 담는다.
 
 ## 쓰기
 
