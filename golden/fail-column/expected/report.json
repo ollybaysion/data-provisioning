@@ -1,0 +1,5 @@
+{
+  "code": "COLUMN_MISMATCH",
+  "query_id": "q01_sensor_master",
+  "where": "line 2"
+}

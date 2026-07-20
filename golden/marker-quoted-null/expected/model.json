@@ -1,0 +1,18 @@
+{
+  "queries": {
+    "q01_sensor_master": {
+      "columns": ["SENSOR_ID", "SENSOR_NM", "SITE_CD"],
+      "provenance": {
+        "db_id": "FDCPRD",
+        "integrity": "marker-nonce",
+        "round": 1,
+        "rows": 2,
+        "validated": true
+      },
+      "rows": [
+        ["S-0004", "", null],
+        ["S-0005", "온도센서B", "STE02"]
+      ]
+    }
+  }
+}

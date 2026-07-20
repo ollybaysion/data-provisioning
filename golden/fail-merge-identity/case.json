@@ -1,0 +1,5 @@
+{
+  "base": "marker-basic",
+  "params": { "sensor_id": "S-0005" },
+  "opts": { "nonce": "a1b2" }
+}

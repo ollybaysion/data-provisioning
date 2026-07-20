@@ -1,0 +1,6 @@
+==META db=FDCPRD ts=2026-07-20T09:30:00+09:00 params=sensor_id:S-0004 a1b2==
+==BEGIN q03_alarm_log a1b2==
+ALARM_ID,SENSOR_ID,RAISED_AT
+A-9001,S-0004,2026-07-01
+==END q03_alarm_log ROWS:1 a1b2==
+==BUNDLE COMPLETE: 1 a1b2==

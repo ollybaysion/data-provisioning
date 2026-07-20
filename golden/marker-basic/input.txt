@@ -1,0 +1,11 @@
+==META db=FDCPRD ts=2026-07-19T10:00:00+09:00 params=sensor_id:S-0004 a1b2==
+==BEGIN q01_sensor_master a1b2==
+SENSOR_ID,SENSOR_NM,SITE_CD
+S-0004,온도센서A,STE01
+==END q01_sensor_master ROWS:1 a1b2==
+==BEGIN q02_calib_history a1b2==
+CALIB_ID,SENSOR_ID,CALIB_DT,OFFSET_VAL
+C-1001,S-0004,2026-05-01,0.12
+C-1002,S-0004,2026-06-01,0.09
+==END q02_calib_history ROWS:2 a1b2==
+==BUNDLE COMPLETE: 2 a1b2==

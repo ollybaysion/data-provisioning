@@ -1,0 +1,40 @@
+{
+  "queries": {
+    "q01_sensor_master": {
+      "columns": ["SENSOR_ID", "SENSOR_NM", "SITE_CD"],
+      "provenance": {
+        "db_id": "FDCPRD",
+        "integrity": "marker-nonce",
+        "round": 1,
+        "rows": 1,
+        "validated": true
+      },
+      "rows": [["S-0004", "온도센서A", "STE01"]]
+    },
+    "q02_calib_history": {
+      "columns": ["CALIB_ID", "SENSOR_ID", "CALIB_DT", "OFFSET_VAL"],
+      "provenance": {
+        "db_id": "FDCPRD",
+        "integrity": "marker-nonce",
+        "round": 1,
+        "rows": 2,
+        "validated": true
+      },
+      "rows": [
+        ["C-1001", "S-0004", "2026-05-01", "0.12"],
+        ["C-1002", "S-0004", "2026-06-01", "0.09"]
+      ]
+    },
+    "q03_alarm_log": {
+      "columns": ["ALARM_ID", "SENSOR_ID", "RAISED_AT"],
+      "provenance": {
+        "db_id": "FDCPRD",
+        "integrity": "marker-nonce",
+        "round": 2,
+        "rows": 1,
+        "validated": true
+      },
+      "rows": [["A-9001", "S-0004", "2026-07-01"]]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "code": "ROWCOUNT_MISMATCH",
+  "query_id": "q02_calib_history",
+  "where": "line 2"
+}

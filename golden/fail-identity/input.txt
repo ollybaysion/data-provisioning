@@ -1,0 +1,6 @@
+==META db=FDCDEV ts=2026-07-19T10:00:00+09:00 params=sensor_id:S-0004 a1b2==
+==BEGIN q01_sensor_master a1b2==
+SENSOR_ID,SENSOR_NM,SITE_CD
+S-0004,온도센서A,STE01
+==END q01_sensor_master ROWS:1 a1b2==
+==BUNDLE COMPLETE: 1 a1b2==

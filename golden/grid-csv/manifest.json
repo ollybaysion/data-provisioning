@@ -1,0 +1,7 @@
+{
+  "queries": {
+    "q01_sensor_master": {
+      "expected_columns": ["SENSOR_ID", "SENSOR_NM", "SITE_CD"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+==BEGIN q01_sensor_master==
+SENSOR_ID,SENSOR_NM,SITE_CD
+S-0004,온도센서A,STE01
+==END q01_sensor_master==
