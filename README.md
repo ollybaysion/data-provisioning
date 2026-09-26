@@ -1,5 +1,10 @@
 # data-provisioning
 
+> **옮겨 감(2026-09-26) — 이 레포는 보관용이다.** 엔진은
+> [ollybaysion/demo-fe](https://github.com/ollybaysion/demo-fe) 의 `packages/data-provisioning`
+> 워크스페이스 패키지로 옮겼고(demo-fe#207, 이 레포 `50f4670` 그대로), 이제 그쪽이 원본이다.
+> 사내 빌드 머신이 GitHub 의존성(`github:ollybaysion/data-provisioning#…`)을 받지 못해서다.
+
 데이터가 **어떤 방식으로 제공돼도 해석해 받아들여** 정형 데이터로 바꾸는 순수 로직 코어.
 
 한 줄 계약은 **"bytes in → model out"** 이다. 엔진은 파일을 열지도 저장하지도 않는다. 포트가
